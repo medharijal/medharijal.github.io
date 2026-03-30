@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Reduce max-width for better readability
+.container-lg {
+  max-width: 800px !important;
+}
+
+.markdown-body {
+  max-width: 800px;
+  margin: 0 auto;
+}
