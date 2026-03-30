@@ -1,0 +1,27 @@
+title: Medha Rijal
+description: My personal site hosted on GitHub Pages
+
+author:
+  name: Medha Rijal
+  email: your-email@example.com
+
+theme: jekyll-theme-primer
+
+# Disable GitHub Metadata warnings for local development
+github: [metadata]
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .git/
+  - .gitignore
