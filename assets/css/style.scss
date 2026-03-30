@@ -1,7 +1,7 @@
----
----
+--- --- @import "{{ site.theme }}";
 
-@import "{{ site.theme }}";
+// Import Sour Gummy font
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
 
 // Reduce max-width for better readability
 .container-lg {
@@ -11,4 +11,30 @@
 .markdown-body {
   max-width: 800px;
   margin: 0 auto;
+}
+
+// Apply Sour Gummy only to the site title
+.site-title-header {
+  font-family: 'Sour Gummy', sans-serif;
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.site-title-header a:hover {
+  text-decoration: none;
+}
+
+// Make the main content h1 ("Hello! 👋") same style as h2 ("About Me")
+.markdown-body h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.3em;
+}
+
+// Limit max-width for About Me section content (the paragraph after the first h2)
+.markdown-body h2:nth-of-type(1)+p {
+  max-width: 700px;
 }
