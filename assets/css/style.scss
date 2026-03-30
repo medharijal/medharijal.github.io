@@ -1,4 +1,7 @@
---- --- @import "{{ site.theme }}";
+---
+---
+
+@import "{{ site.theme }}";
 
 // Import Sour Gummy font
 @import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
@@ -35,6 +38,7 @@
 }
 
 // Limit max-width for About Me section content (the paragraph after the first h2)
-.markdown-body h2:nth-of-type(1)+p {
+.markdown-body h2:nth-of-type(1) + p {
   max-width: 700px;
+  text-align: justify;
 }
