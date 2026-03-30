@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Welcome
+title: Medha Rijal
 ---
 
-# Hi! 👋
+# Hi! 👋🏻
 
 ## About Me
 
